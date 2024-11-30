@@ -1,10 +1,10 @@
 "use client";
 
+import { animations } from '@/lib/animation';
+import type { Company } from '@/types';
 import { motion } from 'framer-motion';
 import { ContactForm } from './contact/ContactForm';
 import { ContactInfo } from './contact/ContactInfo';
-import { animations } from '@/lib/animation';
-import type { Company } from '@/types';
 
 type Props = {
   company: Company;
@@ -20,7 +20,7 @@ export function ContactSection({ company }: Props) {
         >
           <h2 className="text-3xl font-bold mb-4 text-theme-primary">Contact</h2>
           <p className="text-theme-secondary">
-            N'hésitez pas à me contacter pour plus d'informations
+            N&apos;hésitez pas à me contacter pour plus d&apos;informations
           </p>
         </motion.div>
 

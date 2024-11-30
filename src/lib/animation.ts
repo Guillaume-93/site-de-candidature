@@ -27,8 +27,8 @@ export const animations = {
     initial: { opacity: 0, scale: 0.9 },
     whileInView: { opacity: 1, scale: 1 },
     viewport: { once: true },
-    transition: { 
-      duration: 0.8, 
+    transition: {
+      duration: 0.8,
       ease: [0.645, 0.045, 0.355, 1.0],
       scale: {
         type: "spring",
@@ -85,6 +85,11 @@ export const animations = {
         }
       }
     }
+  },
+  springProps: {
+    type: "spring",
+    damping: 20,
+    stiffness: 100
   }
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { animations } from '@/lib/animation';
+import { Company } from '@/types'; // Adjust the import path as necessary
 import { useForm as useFormspree } from '@formspree/react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
@@ -14,7 +15,11 @@ export type FormData = {
   message: string;
 };
 
-export function ContactForm() {
+export type ContactFormProps = {
+  company: Company; // Ajoute cette ligne pour typer la prop
+};
+
+export function ContactForm({ company }: ContactFormProps) {
   const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();

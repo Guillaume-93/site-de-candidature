@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
 import { animations } from '@/lib/animation';
+import { motion } from 'framer-motion';
 
 export function ContactFormError() {
   return (
@@ -9,7 +9,7 @@ export function ContactFormError() {
       {...animations.fadeInUp}
       className="p-4 bg-theme-accent text-theme-primary rounded-md theme-transition"
     >
-      Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.
+      Une erreur est survenue lors de l&apos;envoi du message. Veuillez réessayer.
     </motion.div>
   );
 }

@@ -1,3 +1,5 @@
+import { UseFormRegister } from 'react-hook-form';
+
 // Theme types
 export type ThemeColor = {
   light: string;
@@ -55,8 +57,8 @@ export type Portfolio = {
   description: string;
   link: string;
   image: string;
-  technologies: string[];
-  achievements: string[];
+  technologies: readonly string[];
+  achievements: readonly string[];
 };
 
 // Company types
