@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: theme('colors.blue.600');
+    --color-primary-light: theme('colors.blue.500');
+    --color-primary-dark: theme('colors.blue.700');
+    --color-secondary: theme('colors.purple.600');
+    --color-secondary-light: theme('colors.purple.500');
+    --color-secondary-dark: theme('colors.purple.700');
+    --color-background-primary: theme('colors.white');
+    --color-background-secondary: theme('colors.gray.50');
+    --color-background-accent: theme('colors.gray.100');
+    --color-text-primary: theme('colors.gray.900');
+    --color-text-secondary: theme('colors.gray.600');
+    --color-text-accent: theme('colors.gray.500');
+    --color-border: theme('colors.gray.200');
+    --color-border-light: theme('colors.gray.100');
+    --color-border-dark: theme('colors.gray.300');
+  }
+
+  [data-theme='dark'] {
+    --color-primary: theme('colors.emerald.500');
+    --color-primary-light: theme('colors.emerald.400');
+    --color-primary-dark: theme('colors.emerald.600');
+    --color-secondary: theme('colors.amber.500');
+    --color-secondary-light: theme('colors.amber.400');
+    --color-secondary-dark: theme('colors.amber.600');
+    --color-background-primary: theme('colors.gray.900');
+    --color-background-secondary: theme('colors.gray.800');
+    --color-background-accent: theme('colors.gray.700');
+    --color-text-primary: theme('colors.gray.100');
+    --color-text-secondary: theme('colors.gray.300');
+    --color-text-accent: theme('colors.gray.400');
+    --color-border: theme('colors.gray.700');
+    --color-border-light: theme('colors.gray.600');
+    --color-border-dark: theme('colors.gray.500');
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  input, textarea, select {
+    color-scheme: light dark;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-text-accent);
+    opacity: 0.7;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--color-text-primary);
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-background-primary) inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+@layer components {
+  .theme-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .bg-theme-primary {
+    @apply bg-background-primary theme-transition;
+  }
+
+  .bg-theme-secondary {
+    @apply bg-background-secondary theme-transition;
+  }
+
+  .bg-theme-accent {
+    @apply bg-background-accent theme-transition;
+  }
+
+  .text-theme-primary {
+    @apply text-text-primary theme-transition;
+  }
+
+  .text-theme-secondary {
+    @apply text-text-secondary theme-transition;
+  }
+
+  .text-theme-accent {
+    @apply text-text-accent theme-transition;
+  }
+
+  .border-theme {
+    @apply border-border theme-transition;
+  }
+
+  .border-theme-light {
+    @apply border-border-light theme-transition;
+  }
+
+  .border-theme-dark {
+    @apply border-border-dark theme-transition;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark theme-transition;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark theme-transition;
+  }
+
+  .card {
+    @apply bg-theme-primary border border-theme rounded-lg p-6 shadow-sm hover:shadow-md theme-transition;
+  }
+
+  .section {
+    @apply py-20 theme-transition;
+  }
+
+  .section-alt {
+    @apply bg-theme-secondary;
+  }
+}
