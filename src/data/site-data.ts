@@ -35,7 +35,57 @@ export const themes = {
 export const siteData = {
   // Thème actuel
   theme: {
-    current: 'default' as keyof typeof themes,
+    current: 'default' as keyof typeof themes, // Définit le thème actuel
+  },
+
+  // Liste des thèmes
+  themes: {
+    default: {
+      name: 'Classique',
+      colors: {
+        primary: {
+          light: 'blue-500',
+          DEFAULT: 'blue-600',
+          dark: 'blue-700',
+        },
+        secondary: {
+          light: 'purple-500',
+          DEFAULT: 'purple-600',
+          dark: 'purple-700',
+        },
+      },
+      animation: {
+        duration: {
+          DEFAULT: 0.5,
+          fast: 0.3,
+          slow: 0.8,
+        },
+        ease: [0.4, 0.0, 0.2, 1],
+      },
+    },
+    dark: {
+      name: 'Sombre',
+      colors: {
+        primary: {
+          light: 'emerald-400',
+          DEFAULT: 'emerald-500',
+          dark: 'emerald-600',
+        },
+        secondary: {
+          light: 'amber-400',
+          DEFAULT: 'amber-500',
+          dark: 'amber-600',
+        },
+      },
+      animation: {
+        duration: {
+          DEFAULT: 0.5,
+          fast: 0.3,
+          slow: 0.8,
+        },
+        ease: [0.4, 0.0, 0.2, 1],
+      },
+    },
   },
 
   // Informations personnelles
@@ -49,6 +99,16 @@ export const siteData = {
     website: "https://janedoe.dev",
     avatar: "/images/avatars/avatar.jpg",
   },
+
+  // Informations sur l'entreprise
+  // company: {
+  //   name: "SpaceX",
+  //   values: [
+  //     "Exploration",
+  //     "Technologie",
+  //     "Ambition"
+  //   ]
+  // },
 
   // Section À propos
   about: {
@@ -131,6 +191,15 @@ export const siteData = {
       ]
     }
   ],
+
+  // Motivation
+  motivation: {
+    reasons: [
+      "Alignement avec la vision d'innovation de l'entreprise",
+      "Défis techniques stimulants",
+      "Culture d'entreprise dynamique"
+    ]
+  },
 
   // Contact
   contact: {
