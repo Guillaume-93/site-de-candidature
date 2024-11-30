@@ -163,10 +163,9 @@ src/
 │   └── ui/            # Composants UI réutilisables
 ├── data/              # Données personnalisables
 │   ├── site-data.ts   # Configuration globale
-│   └── themes.ts      # Configuration des thèmes
+│   └── companies.ts   # Données des entreprises
 ├── lib/               # Utilitaires et configuration
 │   ├── animation.ts   # Configurations des animations
-│   ├── companies.ts   # Données des entreprises
 │   └── env.ts        # Gestion des variables d'environnement
 ├── types/             # Types TypeScript
 └── public/           # Assets statiques
