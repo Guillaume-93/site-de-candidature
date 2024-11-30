@@ -1,3 +1,4 @@
+
 # Site de Motivation Interactive
 
 Un site web moderne et interactif servant de lettre de motivation dynamique. Construit avec Next.js, Tailwind CSS et Framer Motion, il offre une expérience utilisateur fluide et professionnelle.
@@ -58,7 +59,6 @@ https://votre-domaine.com/[id-entreprise]
 - `/tesla` - Pour Tesla (Véhicules électriques & Énergies renouvelables)
 - `/google` - Pour Google (Technologies & Intelligence artificielle)
 - `/amazon` - Pour Amazon (Commerce électronique & Services cloud)
-
 
 ### Ajouter une Nouvelle Entreprise
 
@@ -189,6 +189,49 @@ src/
 - Chargement différé
 - Animations optimisées
 - Code minifié en production
+
+## 🚀 Déploiement sur Vercel
+
+Déployer votre site sur Vercel est simple et rapide. Suivez ces étapes pour mettre votre projet en ligne en un rien de temps :
+
+### Prérequis
+
+- Un compte sur [Vercel](https://vercel.com/) (inscription gratuite).
+- Votre projet versionné sur GitHub, GitLab ou Bitbucket.
+
+### Étapes pour déployer
+
+1. **Créer un compte ou se connecter à Vercel**  
+   Rendez-vous sur [https://vercel.com](https://vercel.com) et connectez-vous avec votre compte GitHub, GitLab ou Bitbucket.
+
+2. **Importer votre projet**  
+   - Cliquez sur "New Project" sur votre tableau de bord Vercel.
+   - Sélectionnez votre dépôt contenant ce projet.
+   - Si votre projet n'est pas encore versionné, ajoutez-le à GitHub :  
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git branch -M main
+     git remote add origin https://github.com/username/project.git
+     git push -u origin main
+     ```
+
+3. **Configurer le déploiement**  
+   - Vercel détecte automatiquement que votre projet utilise **Next.js**.
+   - Configurez les variables d'environnement dans l'onglet "Environment Variables" :
+     - **Key** : `NEXT_PUBLIC_FORMSPREE_ID`
+     - **Value** : Votre ID Formspree.
+
+4. **Déployer le projet**  
+   Cliquez sur "Deploy". Vercel construira automatiquement votre application et la déploiera.
+
+5. **Accéder au site**  
+   Une fois le déploiement terminé, vous obtiendrez une URL unique (par exemple : `https://votre-projet.vercel.app`) où votre site sera disponible.
+
+### Mises à jour continues
+
+Chaque fois que vous poussez des modifications sur la branche principale de votre dépôt, Vercel déclenchera un déploiement automatique.
 
 ## 📄 Licence
 
