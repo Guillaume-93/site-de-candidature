@@ -17,7 +17,7 @@ export function MobileProgressSidebar({ sections, visitedSections, progress, onS
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       transition={{ type: "spring", damping: 20, stiffness: 100 }}
-      className="fixed right-0 top-0 h-full w-6 shadow-lg z-50 sm:hidden flex flex-col items-center justify-center"
+      className="fixed right-1 top-0 h-full w-6 shadow-lg z-50 sm:hidden flex flex-col items-center justify-center"
     >
       <div className="relative h-[90%] w-1 bg-theme-accent rounded-full mx-auto overflow-hidden flex flex-col justify-between">
       <motion.div

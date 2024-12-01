@@ -12,7 +12,7 @@ type Props = {
 
 export function ContactSection({ company }: Props) {
   return (
-    <section id="contact" className="section bg-theme-primary">
+    <section id="contact" className="section bg-theme-primary overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           {...animations.fadeInUp}
