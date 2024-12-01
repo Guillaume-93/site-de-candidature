@@ -45,7 +45,7 @@ export function MobileProgressSidebar({ sections, visitedSections, progress, onS
             : 'bg-theme-accent hover:bg-primary/50'
         )}
       />
-      <span className="absolute right-full mr-2 px-2 py-1 bg-theme-primary border border-theme rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 -translate-y-1/2 top-1/2 shadow-lg">
+      <span className="absolute right-full mr-2 px-2 py-1 bg-theme-primary text-theme-primary border border-theme rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 -translate-y-1/2 top-1/2 shadow-lg">
         {label}
       </span>
     </motion.button>

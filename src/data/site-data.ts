@@ -100,16 +100,6 @@ export const siteData = {
     avatar: "/images/avatars/avatar.jpg",
   },
 
-  // Informations sur l'entreprise
-  // company: {
-  //   name: "SpaceX",
-  //   values: [
-  //     "Exploration",
-  //     "Technologie",
-  //     "Ambition"
-  //   ]
-  // },
-
   // Section À propos
   about: {
     summary: "Développeuse passionnée avec 5 ans d'expérience dans le développement d'applications web scalables.",
@@ -191,15 +181,6 @@ export const siteData = {
       ]
     }
   ],
-
-  // Motivation
-  motivation: {
-    reasons: [
-      "Alignement avec la vision d'innovation de l'entreprise",
-      "Défis techniques stimulants",
-      "Culture d'entreprise dynamique"
-    ]
-  },
 
   // Contact
   contact: {
